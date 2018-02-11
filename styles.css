@@ -13,6 +13,7 @@
   z-index: 1;
   overflow: hidden;
 }
+
 .homepage .content__skew {
   -webkit-transform: skew(35deg);
   -moz-transform: skew(35deg);
@@ -23,10 +24,12 @@
   height: 100vh;
   opacity: 1;
 }
+
 .homepage .content figure {
   overflow: hidden;
   z-index: -10;
 }
+
 .homepage .content figure img {
   width: 100%;
   height: 100vh;
@@ -37,6 +40,7 @@
   opacity: 0.5;
   z-index: 1;
 }
+
 .homepage .content__header {
   width: 100%;
   margin: auto;
@@ -50,18 +54,22 @@
   top: 0;
   z-index: 100;
 }
+
 .homepage .content__header h1 {
   padding-top: 12%;
   margin-bottom: 0;
 }
+
 .homepage .content__header h1 img {
   width: 40%;
   max-width: 300px;
 }
+
 .homepage .content__header p {
   font-size: 25px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
+
 .homepage .content__header .main-button {
   display: inline-block;
   background: #3d348b;
@@ -72,11 +80,13 @@
   transition-duration: 0.2s;
   z-index: 100;
 }
+
 .homepage .content__header .main-button:hover {
   transform: scale(1.1);
   background: #fbe400;
   color: #0d1f2d;
 }
+
 .homepage .about {
   width: 100%;
   height: 100vh;
@@ -84,6 +94,7 @@
   z-index: 1;
   overflow: hidden;
 }
+
 .homepage .about__skew {
   -webkit-transform: skew(-35deg);
   -moz-transform: skew(-35deg);
@@ -93,10 +104,12 @@
   width: 100%;
   height: 100vh;
 }
+
 .homepage .about figure {
   overflow: hidden;
   z-index: -10;
 }
+
 .homepage .about figure img {
   width: 100%;
   height: 100vh;
@@ -107,6 +120,7 @@
   opacity: 0.5;
   z-index: 1;
 }
+
 .homepage .about .about__header {
   width: 60%;
   height: 100vh;
@@ -118,6 +132,7 @@
   color: #0d1f2d;
   z-index: 3;
 }
+
 .homepage .about .about__header h2 {
   font-size: 35px;
   text-align: left;
@@ -125,8 +140,27 @@
   padding-top: 20%;
   color: #3d348b;
 }
+
 .homepage .about .about__header p {
   text-align: left;
   font-size: 20px;
   padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 480px) {
+  .homepage .content {
+    background: #f6f4ed;
+  }
+  .homepage .content__header h1 {
+    padding-top: 55%;
+  }
+  .homepage .about {
+    background: white;
+  }
+  .homepage .about__skew {
+    background: white;
+  }
+  .homepage .about .about__header h1 {
+    padding-top: 50%;
+  }
 }
