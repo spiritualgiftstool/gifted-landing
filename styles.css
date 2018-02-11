@@ -59,6 +59,7 @@
   max-width: 300px;
 }
 .homepage .content__header p {
+  padding-bottom: 25px;
   font-size: 25px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
