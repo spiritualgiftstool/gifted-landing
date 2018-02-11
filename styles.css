@@ -94,7 +94,7 @@
 
 .homepage .about {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to right, #3d348b, #fbe400);
   z-index: 1;
   overflow: hidden;
@@ -118,7 +118,7 @@
 
 .homepage .content figure img {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   object-fit: cover;
   -webkit-transform: skew(-35deg);
   -moz-transform: skew(-35deg);
@@ -130,7 +130,7 @@
 .homepage .content__header {
   width: 100%;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-transform: skew(-35deg);
   -moz-transform: skew(-35deg);
   -o-transform: skew(-35deg);
@@ -226,7 +226,7 @@
   font-size: 35px;
   text-align: left;
   padding-bottom: 3%;
-  padding-top: 20%;
+  padding-top: 8%;
   color: #3d348b;
 }
 
@@ -257,7 +257,7 @@
   font-size: 35px;
   text-align: left;
   padding-bottom: 3%;
-  padding-top: 20%;
+  padding-top: 8%;
   color: #3d348b;
 }
 
@@ -283,6 +283,7 @@
   .homepage .about .about__header h1 {
     padding-top: 50%;
   }
+  .homepage .about .about__header p {
+    font-size: 15px;
+  }
 }
-
->>>>>>>df4da013abc688727cbaa335a45f9cdeaa0fd2d8
