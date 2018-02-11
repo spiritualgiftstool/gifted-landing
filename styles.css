@@ -5,59 +5,64 @@
   padding: 0;
 }
 
-.content {
+.homepage .content {
+  margin-bottom: 0;
   width: 100%;
   height: 100vh;
   background: linear-gradient(to right, #3d348b, #fbe400);
   z-index: 1;
   overflow: hidden;
 }
-.content__skew {
-  -webkit-transform: skew(-35deg);
-  -moz-transform: skew(-35deg);
-  -o-transform: skew(-35deg);
+.homepage .content__skew {
+  -webkit-transform: skew(35deg);
+  -moz-transform: skew(35deg);
+  -o-transform: skew(35deg);
   background: #f6f4ed;
   z-index: 2;
   width: 100%;
   height: 100vh;
   opacity: 1;
 }
-.content figure {
+.homepage .content figure {
   overflow: hidden;
   z-index: -10;
 }
-.content figure img {
+.homepage .content figure img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  -webkit-transform: skew(35deg);
-  -moz-transform: skew(35deg);
-  -o-transform: skew(35deg);
+  -webkit-transform: skew(-35deg);
+  -moz-transform: skew(-35deg);
+  -o-transform: skew(-35deg);
   opacity: 0.5;
   z-index: 1;
 }
-.content__header {
+.homepage .content__header {
   width: 100%;
   margin: auto;
   height: 100vh;
-  -webkit-transform: skew(35deg);
-  -moz-transform: skew(35deg);
-  -o-transform: skew(35deg);
+  -webkit-transform: skew(-35deg);
+  -moz-transform: skew(-35deg);
+  -o-transform: skew(-35deg);
   text-align: center;
   color: #0d1f2d;
   position: absolute;
   top: 0;
   z-index: 100;
 }
-.content__header h1 img {
+.homepage .content__header h1 {
+  padding-top: 12%;
+  margin-bottom: 0;
+}
+.homepage .content__header h1 img {
   width: 40%;
-  margin-bottom: -70px;
+  max-width: 300px;
 }
-.content__header p {
-  font-size: 20px;
-  padding-bottom: 5%;
+.homepage .content__header p {
+  font-size: 25px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
-.content__header .main-button {
+.homepage .content__header .main-button {
   display: inline-block;
   background: #3d348b;
   padding: 15px 30px;
@@ -67,45 +72,60 @@
   transition-duration: 0.2s;
   z-index: 100;
 }
-.content__header .main-button:hover {
+.homepage .content__header .main-button:hover {
   transform: scale(1.1);
   background: #fbe400;
+  color: #0d1f2d;
 }
-
-.section {
+.homepage .about {
   width: 100%;
   height: 100vh;
   background: linear-gradient(to right, #3d348b, #fbe400);
   z-index: 1;
   overflow: hidden;
 }
-.section__skew {
-  -webkit-transform: skew(35deg);
-  -moz-transform: skew(35deg);
-  -o-transform: skew(35deg);
+.homepage .about__skew {
+  -webkit-transform: skew(-35deg);
+  -moz-transform: skew(-35deg);
+  -o-transform: skew(-35deg);
   background: #f6f4ed;
   z-index: 2;
   width: 100%;
   height: 100vh;
 }
-.section__header {
-  width: 65%;
+.homepage .about figure {
+  overflow: hidden;
+  z-index: -10;
+}
+.homepage .about figure img {
+  width: 100%;
   height: 100vh;
-  margin: auto;
+  object-fit: cover;
   -webkit-transform: skew(-35deg);
   -moz-transform: skew(-35deg);
   -o-transform: skew(-35deg);
+  opacity: 0.5;
+  z-index: 1;
+}
+.homepage .about .about__header {
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+  -webkit-transform: skew(35deg);
+  -moz-transform: skew(35deg);
+  -o-transform: skew(35deg);
   text-align: center;
   color: #0d1f2d;
   z-index: 3;
 }
-.section__header h2 {
+.homepage .about .about__header h2 {
+  font-size: 35px;
   text-align: left;
   padding-bottom: 3%;
-  padding-top: 9%;
+  padding-top: 20%;
   color: #3d348b;
 }
-.section__header p {
+.homepage .about .about__header p {
   text-align: left;
   font-size: 20px;
   padding-bottom: 5%;
